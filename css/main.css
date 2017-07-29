@@ -391,6 +391,14 @@ figure figcaption p {
   margin-bottom: 0;
   margin-top: 5px;
 }
+.react-logo {
+  animation: react-logo-spin infinite 20s linear;
+
+}
+@keyframes react-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 #feature {
   padding: 40px 0;
 }
@@ -654,7 +662,7 @@ ul.social-icons li {
   border-bottom: 1px solid #dedede;
   padding-top: 30px;
   position: relative;
-  webkit-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
