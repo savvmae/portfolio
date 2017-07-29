@@ -237,7 +237,7 @@ a:hover {
   margin-right: 10px;
 }
 #about {
-  padding: 110px 0;
+  padding: 50px 0;
 }
 #about .block {
   padding: 20px 30px 0 30px;
@@ -257,6 +257,9 @@ a:hover {
 #about .block img {
   max-width: 100%;
 }
+.top-padding {
+  padding-top: 70px;
+}
 .radius {
   border-radius: 50%;
 }
@@ -265,7 +268,7 @@ a:hover {
   width: 100%;
 }
 .works {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #FCFCFC;
 }
 .works .block {
@@ -389,7 +392,7 @@ figure figcaption p {
   margin-top: 5px;
 }
 #feature {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 #feature .media {
   margin: 0px 0 70px 0;
