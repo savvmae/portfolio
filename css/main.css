@@ -311,6 +311,9 @@ a:hover {
   font-size: 30px;
   color: #fff;
 }
+.mooderator-wrapper {
+  background: #EE706F;
+}
 figure {
   background: #fff;
   margin-bottom: 45px;
