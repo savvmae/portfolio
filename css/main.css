@@ -264,7 +264,7 @@ a:hover {
   border-radius: 50%;
 }
 .project-img {
-  height: 300px;
+  height: 250px;
   width: 100%;
 }
 .works {
@@ -375,13 +375,14 @@ figure .overlay:hover a {
 }
 figure .buttons {
   position: absolute;
-  top: 45%;
-  left: 24%;
+  top: 42%;
+  left: 14%;
 }
 figure figcaption {
   padding: 20px 25px;
   margin-top: 0;
   color: #666;
+  height: 100px;
 }
 figure figcaption h4 {
   margin: 0;
@@ -1127,4 +1128,9 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.less-pm {
+  padding: 0px;
+  margin: auto;
 }
