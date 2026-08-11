@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Savannah Cosby | Staff Engineer, UI Platform</title>
+<style>
+  :root {
+    --mint: #8cc0a8;
+    --gray: #5f6360;
+    --dark: #4a4a4a;
+    --text: #3d403e;
+  }
+
+  @page { size: letter; margin: 0; }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Andale Mono", "Menlo", "Courier New", monospace;
+    font-size: 9.2pt;
+    line-height: 1.32;
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar-top { height: 16px; background: var(--dark); flex: none; }
+  .bar-bottom { height: 20px; background: var(--mint); flex: none; margin-top: auto; }
+
+  header { text-align: center; padding: 18px 0 10px; }
+
+  h1 {
+    margin: 0;
+    font-size: 26pt;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: var(--gray);
+  }
+  h1 .last { color: var(--mint); }
+
+  .subtitle {
+    margin: 2px 0 0;
+    font-size: 10.5pt;
+    letter-spacing: 0.3em;
+    color: var(--text);
+  }
+
+  .contact {
+    margin: 15px 0 0;
+    font-size: 8.6pt;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+  }
+  .contact span { margin: 0 14px; }
+
+  .rule { border-top: 1px solid #cfd3d0; margin: 9px 34px 0; }
+
+  .cols {
+    display: flex;
+    padding: 13px 34px 16px;
+    gap: 20px;
+  }
+
+  aside {
+    width: 172px;
+    flex: none;
+    text-align: right;
+    font-size: 8.6pt;
+    border-right: 1px solid #cfd3d0;
+    padding-right: 20px;
+  }
+
+  main { flex: 1; min-width: 0; }
+
+  h2 {
+    margin: 0 0 7px;
+    font-size: 10.5pt;
+    font-weight: 400;
+    letter-spacing: 0.13em;
+    color: var(--mint);
+  }
+
+  .group { margin-bottom: 11px; }
+
+  .group-label {
+    font-size: 7pt;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gray);
+    border-bottom: 1px solid var(--mint);
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  aside ul { list-style: none; margin: 0; padding: 0; }
+  aside li { line-height: 1.4; }
+
+  .edu { margin-top: 16px; }
+  .edu h2 { margin-bottom: 6px; }
+  .edu p { margin: 0; line-height: 1.4; }
+
+  .job { margin-bottom: 10px; }
+  .job:last-child { margin-bottom: 0; }
+
+  .job-title {
+    margin: 0 0 3px;
+    color: var(--gray);
+    letter-spacing: 0.02em;
+  }
+
+  .bullets { list-style: none; margin: 0; padding: 0; }
+
+  .bullets li {
+    position: relative;
+    padding-left: 12px;
+    text-wrap: pretty;
+  }
+
+  .bullets li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: var(--mint);
+  }
+
+  main a { color: var(--text); text-decoration: underline; }
+
+  @media screen {
+    .page {
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    header,
+    .cols {
+      width: 100%;
+      max-width: 8.5in;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .rule {
+      max-width: calc(8.5in - 68px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sheet { zoom: var(--fit, 1); }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="bar-top"></div>
+
+    <div class="sheet">
+      <header>
+        <h1>SAVANNAH <span class="last">COSBY</span></h1>
+        <p class="subtitle">Staff Engineer, UI Platform</p>
+        <p class="contact">
+          <span>843 906 3556</span>
+          <span>savannah.cosby123@gmail.com</span>
+          <span>github.com/savvmae</span>
+        </p>
+      </header>
+
+      <div class="rule"></div>
+
+      <div class="cols">
+        <aside>
+          <h2>SKILLS</h2>
+
+          <div class="group">
+            <div class="group-label">Core</div>
+            <ul>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-label">Platform</div>
+            <ul>
+              <li>Nx</li>
+              <li>pnpm workspaces</li>
+              <li>Design Systems</li>
+              <li>Component Libraries</li>
+              <li>CI/CD</li>
+              <li>GitHub Actions</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-label">AI</div>
+            <ul>
+              <li>Custom Agents</li>
+              <li>Skill Authoring</li>
+              <li>Subagent Authoring</li>
+              <li>Cross-tool Rule Sync</li>
+              <li>Claude/Cursor/Codex</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-label">UI</div>
+            <ul>
+              <li>TanStack Query</li>
+              <li>TanStack Router</li>
+              <li>TanStack Start</li>
+              <li>Jotai</li>
+              <li>Tailwind</li>
+              <li>shadcn/ui</li>
+              <li>Radix</li>
+              <li>AG Grid</li>
+              <li>AG Charts</li>
+              <li>React Native</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <div class="group-label">Testing</div>
+            <ul>
+              <li>Vitest</li>
+              <li>Playwright</li>
+              <li>React Testing Library</li>
+            </ul>
+          </div>
+
+          <div class="edu">
+            <h2>EDUCATION</h2>
+            <p>
+              Associates Degree<br>
+              Liberal Arts<br>
+              Trident Technical<br>
+              Charleston SC<br>
+              2012
+            </p>
+          </div>
+        </aside>
+
+        <main>
+          <h2>EXPERIENCE</h2>
+
+          <div class="job">
+            <p class="job-title">Chatham Financial // Oct 2023 - Present // Staff Engineer / Tech Lead</p>
+            <ul class="bullets">
+              <li>Lead a UI platform team of four engineers building the design system, component library, and build tooling used by ~10 product teams</li>
+              <li>Architected and launched a greenfield monorepo replacing a legacy polyrepo of disjointed UIs with no shared standards, shipping Onyx as its first product</li>
+              <li>Built in-house AI tooling for PR review, architecture design, and contributor workflows, with custom agents and shared rulesets kept in sync across Claude, Cursor, and Codex</li>
+              <li>Scaled that tooling to 30 engineers and 10 designers, enabling high-quality contributions from outside frontend and reducing the human review required on each change</li>
+              <li>Own the platform layer enabling continuous deployment, automated code owner and reviewer assignment, and consistently low build times</li>
+              <li>Coordinate breaking platform changes across consuming teams by owning the migration work rather than pushing it downstream, backed by a formal RFC, ADR, and tech spec intake process</li>
+              <li>Founded the UI Champion program: 10 engineers embedded in product teams as spokes to the platform hub, giving every team a named frontend owner and a direct path for standards to land</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <p class="job-title">Grindr // Jan 2023 - Aug 2023 // Staff SWE</p>
+            <ul class="bullets">
+              <li>Led the launch of <a href="https://web.grindr.com">web.grindr.com</a>, the company's first web client for a previously mobile-only product</li>
+              <li>Mentored and paired with engineers, and interviewed and hired for the team</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <p class="job-title">Twitter // Aug 2021 - Nov 2022 // Senior SWE</p>
+            <ul class="bullets">
+              <li>Built and maintained <a href="https://twitter.com">twitter.com</a> and <a href="https://tweetdeck.com">tweetdeck.com</a></li>
+              <li>Maintained and refactored the shared component library and central UI surfaces including navigation and preferences</li>
+              <li>Delegated projects and grew engineers on the team</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <p class="job-title">Hotel Engine // Oct 2020 - Aug 2021 // Senior SWE -&gt; Tech Lead</p>
+            <ul class="bullets">
+              <li>Led a pod of four engineers, promoted from Senior into the tech lead role</li>
+              <li>Built and enforced the internal component library adopted across product teams</li>
+              <li>Founded a cross-discipline React guild to align frontend practice between pods</li>
+              <li>Shipped and maintained the React web app and React Native mobile app</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <p class="job-title">Skookum // Nov 2018 - Oct 2020 // SWE I -&gt; SWE III</p>
+            <ul class="bullets">
+              <li>Built centralized design systems for client teams across a range of technologies</li>
+              <li>Rewrote legacy code in modern frameworks and mentored junior developers</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <p class="job-title">UNION // Oct 2017 - Nov 2018 // Web Developer</p>
+            <ul class="bullets">
+              <li>Built reusable React component libraries for nationally recognized brands</li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div class="bar-bottom"></div>
+  </div>
+
+  <script>
+    const sheet = document.querySelector('.sheet');
+    const barHeight =
+      document.querySelector('.bar-top').offsetHeight +
+      document.querySelector('.bar-bottom').offsetHeight;
+
+    function fitToViewport() {
+      document.documentElement.style.setProperty('--fit', '1');
+      const available = window.innerHeight - barHeight - 1;
+      const scale = Math.min(1, available / sheet.offsetHeight);
+      document.documentElement.style.setProperty('--fit', String(scale));
+    }
+
+    fitToViewport();
+    window.addEventListener('resize', fitToViewport);
+  </script>
+</body>
+</html>
