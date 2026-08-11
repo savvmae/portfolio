@@ -263,13 +263,12 @@ a:hover {
 .radius {
   border-radius: 50%;
 }
-.project-img {
-  height: 275px;
-  width: 100%;
-}
+.project-img,
 .project-img-l {
   height: 275px;
   width: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 .ma {
   width: 100%;
@@ -383,14 +382,17 @@ figure .overlay:hover a {
 }
 figure .buttons {
   position: absolute;
-  top: 45%;
-  left: 24%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
 }
 figure figcaption {
   padding: 20px 25px;
   margin-top: 0;
   color: #666;
-  height: 100px;
+  min-height: 100px;
 }
 figure figcaption h4 {
   margin: 0;
