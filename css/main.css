@@ -405,6 +405,43 @@ figure figcaption p {
   margin-bottom: 0;
   margin-top: 5px;
 }
+/* Projects grid: equal-height cards.
+   Scoped to .projects-row so the other Bootstrap .row elements keep their
+   default floated behaviour. */
+.projects-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* Bootstrap's clearfix pseudo-elements would otherwise become stray flex items. */
+.projects-row:before,
+.projects-row:after {
+  display: none;
+}
+.projects-row > [class*="col-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+}
+.projects-row figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+/* The caption absorbs the leftover height so every card bottom lines up. */
+.projects-row figure figcaption {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
 .react-logo {
   animation: react-logo-spin infinite 20s linear;
 

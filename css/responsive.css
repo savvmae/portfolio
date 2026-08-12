@@ -71,8 +71,11 @@ px      68    160    252    */
   #about .block {
     padding: 0;
   }
+  /* main.css centres the overlay buttons with left/right: 0 + text-align:
+     center, which works for one button or two. A hard left offset here
+     pushed them off-centre on small screens. */
   figure .buttons {
-    left: 16%;
+    left: 0;
   }
   #feature .media {
     margin: 0px 0px 35px;
